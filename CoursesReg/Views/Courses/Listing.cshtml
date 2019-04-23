@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CoursesReg.Models.Courses>
+
+@{
+    ViewBag.Title = "Listing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<div class="btn-link">
+    @Html.ActionLink("Add a New Course", "AddCourse")
+</div>
+<h2>All Courses</h2>
+@if (!Model.Any())
+{
+    <p>There's No COURSES yet</p>
+}
+else
+{
+    <table class="table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Credit</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Course in Model)
+            {
+                <tr>
+
+                    <td>@Course.Id</td>
+
+                    <td>@Course.CourseName</td>
+
+                    <td>@Course.Credits</td>
+
+                    <td>@Course.Department.DepartmentName</td>
+
+
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+}
+
+
+

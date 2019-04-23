@@ -1,0 +1,46 @@
+﻿﻿@model IEnumerable<CoursesReg.Models.Students>
+
+@{
+    ViewBag.Title = "Listing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<div class="btn-link">
+    @Html.ActionLink("Add a New Student", "AddStudent")
+</div>
+<h2>ALL Student</h2>
+@if (!Model.Any())
+{
+    <p>There's No registered Students yet</p>
+}
+else
+{
+    <table class="table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Major</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Student in Model)
+            {
+                <tr>
+
+                    <td>@Student.Id</td>
+
+                    <td>@Student.FirstName @Student.LastName</td>
+
+                    <td>@Student.Major.MajorName</td>
+
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+}
+
+

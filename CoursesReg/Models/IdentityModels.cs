@@ -20,6 +20,17 @@ namespace CoursesReg.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Students> Students { get; set; }
+       
+        public DbSet<Major> Major { get; set; }
+        public DbSet<Courses> Courses { get; set; }
+        public DbSet<Department> Department { get; set; }
+
+        public DbSet<AddmissionCode> AddmissionCode { get; set; }
+
+        public DbSet<Enrollment> Enrollment { get; set; }
+
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

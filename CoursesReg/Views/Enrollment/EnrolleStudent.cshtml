@@ -1,0 +1,44 @@
+﻿@model CoursesReg.ViewModels.NewEnrolleViewModel
+@{
+    ViewBag.Title = "EnrolleStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Enrolle Student Here</h2>
+
+@using (Html.BeginForm("Enrolle", "Enrollment"))
+{
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+   
+        <div class="form-group">
+            @Html.LabelFor(model => model.Enrollment.StudentId)
+            @Html.DropDownListFor(model => model.Enrollment.StudentId, new SelectList(Model.Students, "Id", "Id"), "Select Student", new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Enrollment.CourseId)
+            @Html.DropDownListFor(model => model.Enrollment.CourseId, new SelectList(Model.Courses, "Id", "CourseName"), "Select Course", new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Enrollment.MajorId)
+            @Html.DropDownListFor(model => model.Enrollment.MajorId, new SelectList(Model.Majors, "Id", "MajorName"), "Select Major", new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Enrollment.Grade)
+            @Html.TextBoxFor(model => model.Enrollment.Grade, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Enrollment.Grade, "", new { @class = "text-danger" })
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+
+}

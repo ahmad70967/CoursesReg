@@ -1,0 +1,49 @@
+﻿@model IEnumerable<CoursesReg.Models.Enrollment>
+
+@{
+    ViewBag.Title = "Listing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<div class="btn-link">
+    @Html.ActionLink("Enrolle New Student", "EnrolleStudent")
+</div>
+<h2>List of all enrollments</h2>
+@if (!Model.Any())
+{
+    <p>There's No Enrolled Students</p>
+}
+
+else
+{
+    <table class="table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Major</th>
+                <th>Grade</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var enrollement in Model)
+            {
+                <tr>
+
+                    <td>@enrollement.Student.FirstName  @enrollement.Student.LastName</td>
+
+                    <td>@enrollement.Course.CourseName</td>
+
+                    <td>@enrollement.Major.MajorName</td>
+
+                    <td>@enrollement.Grade</td>
+                   
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+}

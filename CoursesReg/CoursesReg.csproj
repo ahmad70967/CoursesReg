@@ -189,20 +189,164 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\EnrollmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904142011426_ModelsCreated.cs" />
+    <Compile Include="Migrations\201904142011426_ModelsCreated.Designer.cs">
+      <DependentUpon>201904142011426_ModelsCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904142147097_addmissionFix.cs" />
+    <Compile Include="Migrations\201904142147097_addmissionFix.Designer.cs">
+      <DependentUpon>201904142147097_addmissionFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904142200224_ListingStudent.cs" />
+    <Compile Include="Migrations\201904142200224_ListingStudent.Designer.cs">
+      <DependentUpon>201904142200224_ListingStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904142232396_CourseListed.cs" />
+    <Compile Include="Migrations\201904142232396_CourseListed.Designer.cs">
+      <DependentUpon>201904142232396_CourseListed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152327084_CoursesPhase1.cs" />
+    <Compile Include="Migrations\201904152327084_CoursesPhase1.Designer.cs">
+      <DependentUpon>201904152327084_CoursesPhase1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152337428_TryToDep.cs" />
+    <Compile Include="Migrations\201904152337428_TryToDep.Designer.cs">
+      <DependentUpon>201904152337428_TryToDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152343025_ttest121.cs" />
+    <Compile Include="Migrations\201904152343025_ttest121.Designer.cs">
+      <DependentUpon>201904152343025_ttest121.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152344087_DepartmentForekey.cs" />
+    <Compile Include="Migrations\201904152344087_DepartmentForekey.Designer.cs">
+      <DependentUpon>201904152344087_DepartmentForekey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152345423_DepartmentForekey1.cs" />
+    <Compile Include="Migrations\201904152345423_DepartmentForekey1.Designer.cs">
+      <DependentUpon>201904152345423_DepartmentForekey1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152348245_DepartmentForekeyFinal.cs" />
+    <Compile Include="Migrations\201904152348245_DepartmentForekeyFinal.Designer.cs">
+      <DependentUpon>201904152348245_DepartmentForekeyFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152349095_DepartmentForekeyFinal2.cs" />
+    <Compile Include="Migrations\201904152349095_DepartmentForekeyFinal2.Designer.cs">
+      <DependentUpon>201904152349095_DepartmentForekeyFinal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152352376_DepartmentForekeyFinal3.cs" />
+    <Compile Include="Migrations\201904152352376_DepartmentForekeyFinal3.Designer.cs">
+      <DependentUpon>201904152352376_DepartmentForekeyFinal3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904152355175_AddDep.cs" />
+    <Compile Include="Migrations\201904152355175_AddDep.Designer.cs">
+      <DependentUpon>201904152355175_AddDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160004458_plzCourse.cs" />
+    <Compile Include="Migrations\201904160004458_plzCourse.Designer.cs">
+      <DependentUpon>201904160004458_plzCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160014452_aaa.cs" />
+    <Compile Include="Migrations\201904160014452_aaa.Designer.cs">
+      <DependentUpon>201904160014452_aaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160026421_removeDep.cs" />
+    <Compile Include="Migrations\201904160026421_removeDep.Designer.cs">
+      <DependentUpon>201904160026421_removeDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160037091_Aloha.cs" />
+    <Compile Include="Migrations\201904160037091_Aloha.Designer.cs">
+      <DependentUpon>201904160037091_Aloha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160100469_noCourses.cs" />
+    <Compile Include="Migrations\201904160100469_noCourses.Designer.cs">
+      <DependentUpon>201904160100469_noCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160104461_YaAli.cs" />
+    <Compile Include="Migrations\201904160104461_YaAli.Designer.cs">
+      <DependentUpon>201904160104461_YaAli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160153012_EnrollmentAdded.cs" />
+    <Compile Include="Migrations\201904160153012_EnrollmentAdded.Designer.cs">
+      <DependentUpon>201904160153012_EnrollmentAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160912195_PlzWork.cs" />
+    <Compile Include="Migrations\201904160912195_PlzWork.Designer.cs">
+      <DependentUpon>201904160912195_PlzWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160918015_PlzWork2.cs" />
+    <Compile Include="Migrations\201904160918015_PlzWork2.Designer.cs">
+      <DependentUpon>201904160918015_PlzWork2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160922336_PlzWork3.cs" />
+    <Compile Include="Migrations\201904160922336_PlzWork3.Designer.cs">
+      <DependentUpon>201904160922336_PlzWork3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160924248_PlzWork31.cs" />
+    <Compile Include="Migrations\201904160924248_PlzWork31.Designer.cs">
+      <DependentUpon>201904160924248_PlzWork31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160925416_PlzWork44.cs" />
+    <Compile Include="Migrations\201904160925416_PlzWork44.Designer.cs">
+      <DependentUpon>201904160925416_PlzWork44.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160926482_PlzWork45.cs" />
+    <Compile Include="Migrations\201904160926482_PlzWork45.Designer.cs">
+      <DependentUpon>201904160926482_PlzWork45.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160928565_PlzWork453.cs" />
+    <Compile Include="Migrations\201904160928565_PlzWork453.Designer.cs">
+      <DependentUpon>201904160928565_PlzWork453.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904160957429_PlzWork422.cs" />
+    <Compile Include="Migrations\201904160957429_PlzWork422.Designer.cs">
+      <DependentUpon>201904160957429_PlzWork422.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904161000344_PlzWork4221.cs" />
+    <Compile Include="Migrations\201904161000344_PlzWork4221.Designer.cs">
+      <DependentUpon>201904161000344_PlzWork4221.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904161001028_PlzWork4244.cs" />
+    <Compile Include="Migrations\201904161001028_PlzWork4244.Designer.cs">
+      <DependentUpon>201904161001028_PlzWork4244.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904161012428_PlzWorkkkk.cs" />
+    <Compile Include="Migrations\201904161012428_PlzWorkkkk.Designer.cs">
+      <DependentUpon>201904161012428_PlzWorkkkk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904161013510_PlzWorked.cs" />
+    <Compile Include="Migrations\201904161013510_PlzWorked.Designer.cs">
+      <DependentUpon>201904161013510_PlzWorked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AddmissionCode.cs" />
+    <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Major.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Students.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\NewCourseViewModel.cs" />
+    <Compile Include="ViewModels\NewEnrolleViewModel.cs" />
+    <Compile Include="ViewModels\NewStudentViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
+    <Content Include="Content\bootstrap-SpaceLab.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrapCosmo .css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -257,6 +401,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Students\Listing.cshtml" />
+    <Content Include="Views\Courses\Listing.cshtml" />
+    <Content Include="Views\Students\AddStudent.cshtml" />
+    <Content Include="Views\Courses\AddCourse.cshtml" />
+    <Content Include="Views\Enrollment\EnrolleStudent.cshtml" />
+    <Content Include="Views\Enrollment\Listing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -275,6 +425,104 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904142011426_ModelsCreated.resx">
+      <DependentUpon>201904142011426_ModelsCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904142147097_addmissionFix.resx">
+      <DependentUpon>201904142147097_addmissionFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904142200224_ListingStudent.resx">
+      <DependentUpon>201904142200224_ListingStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904142232396_CourseListed.resx">
+      <DependentUpon>201904142232396_CourseListed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152327084_CoursesPhase1.resx">
+      <DependentUpon>201904152327084_CoursesPhase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152337428_TryToDep.resx">
+      <DependentUpon>201904152337428_TryToDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152343025_ttest121.resx">
+      <DependentUpon>201904152343025_ttest121.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152344087_DepartmentForekey.resx">
+      <DependentUpon>201904152344087_DepartmentForekey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152345423_DepartmentForekey1.resx">
+      <DependentUpon>201904152345423_DepartmentForekey1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152348245_DepartmentForekeyFinal.resx">
+      <DependentUpon>201904152348245_DepartmentForekeyFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152349095_DepartmentForekeyFinal2.resx">
+      <DependentUpon>201904152349095_DepartmentForekeyFinal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152352376_DepartmentForekeyFinal3.resx">
+      <DependentUpon>201904152352376_DepartmentForekeyFinal3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904152355175_AddDep.resx">
+      <DependentUpon>201904152355175_AddDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160004458_plzCourse.resx">
+      <DependentUpon>201904160004458_plzCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160014452_aaa.resx">
+      <DependentUpon>201904160014452_aaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160026421_removeDep.resx">
+      <DependentUpon>201904160026421_removeDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160037091_Aloha.resx">
+      <DependentUpon>201904160037091_Aloha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160100469_noCourses.resx">
+      <DependentUpon>201904160100469_noCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160104461_YaAli.resx">
+      <DependentUpon>201904160104461_YaAli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160153012_EnrollmentAdded.resx">
+      <DependentUpon>201904160153012_EnrollmentAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160912195_PlzWork.resx">
+      <DependentUpon>201904160912195_PlzWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160918015_PlzWork2.resx">
+      <DependentUpon>201904160918015_PlzWork2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160922336_PlzWork3.resx">
+      <DependentUpon>201904160922336_PlzWork3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160924248_PlzWork31.resx">
+      <DependentUpon>201904160924248_PlzWork31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160925416_PlzWork44.resx">
+      <DependentUpon>201904160925416_PlzWork44.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160926482_PlzWork45.resx">
+      <DependentUpon>201904160926482_PlzWork45.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160928565_PlzWork453.resx">
+      <DependentUpon>201904160928565_PlzWork453.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904160957429_PlzWork422.resx">
+      <DependentUpon>201904160957429_PlzWork422.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161000344_PlzWork4221.resx">
+      <DependentUpon>201904161000344_PlzWork4221.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161001028_PlzWork4244.resx">
+      <DependentUpon>201904161001028_PlzWork4244.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161012428_PlzWorkkkk.resx">
+      <DependentUpon>201904161012428_PlzWorkkkk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161013510_PlzWorked.resx">
+      <DependentUpon>201904161013510_PlzWorked.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
